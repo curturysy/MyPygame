@@ -77,24 +77,24 @@ gameIcon = pyg.image.load('image/icon.jpg')  # 游戏图标
 
 pyg.display.set_icon(gameIcon)
 
-hit = pyg.mixer.Sound('soundtrack/hit.wav')
+hit = pyg.mixer.Sound('sound/hit.wav')
 
-eat = pyg.mixer.Sound('soundtrack/eat.wav')
+eat = pyg.mixer.Sound('sound/eat.wav')
 
-click = pyg.mixer.Sound('soundtrack/click.wav')  # 创建点击按钮触发的声音
+click = pyg.mixer.Sound('sound/click.wav')  # 创建点击按钮触发的声音
 
-lazer_sound = pyg.mixer.Sound('soundtrack/lazer3.wav')  # 创建点击按钮触发的声音
+lazer_sound = pyg.mixer.Sound('sound/lazer3.wav')  # 创建点击按钮触发的声音
 
-attack = pyg.mixer.Sound('soundtrack/attack2.mp3')
+attack = pyg.mixer.Sound('sound/attack2.mp3')
 
 # 创建大厅BGM
 def hub_BGM():
-    pyg.mixer.music.load('soundtrack/hub_BGM.mp3')
+    pyg.mixer.music.load('sound/hub_BGM.mp3')
     pyg.mixer.music.play(-1)
     pyg.mixer.music.set_volume(0.2)
 
 def fight_BGM():
-    pyg.mixer.music.load('soundtrack/BGM.mp3')
+    pyg.mixer.music.load('sound/BGM.mp3')
     pyg.mixer.music.play(-1)
     pyg.mixer.music.set_volume(0.5)
 
